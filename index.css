@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@100;200;300;400;500;600;700;800&display=swap");
+
+body {
+    font-family: Mulish;
+    background-color: #F5F5F5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    z-index: 10;
+    width: 1279px;
+    height: 80px;
+    left: 80px;
+    top: 18px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 0 15px;
+    
+}
+
+nav.logo {
+    position: absolute;
+    float: left;
+    width: 50px;
+    height: 300px;
+    display: flex;
+    align-self: center;
+
+}
+
+ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    line-height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+a.under{
+    width: 45px;
+    left: 688px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #1A1A1A;
+
+}
+
+a.under:hover, .active{
+    border-bottom: 3px solid rgb(17, 8, 8);
+    padding-bottom: 23px;
+    transition: all 0.3s ease-out;
+    border-radius: 10px 10px 0px 0px;
+}
+
+a.box{
+   /* display: block; */
+   padding: 1em;
+   background-color: #1A1A1A;
+   font-display:initial;
+   border-radius: 10px;
+   color: #FFFFFF;
+}
+
+#nav-toggle {
+    position: absolute;
+}
+
+label.icon-burger{
+    display: none;
+    position: absolute;
+    left: 94%;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.line{
+    width: 30px;
+    height: 3px;
+    background-color: #1A1A1A;
+    margin: 5px;
+
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+        left: 0%;
+        top: 0;
+        box-shadow: 0;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        background-color: #F5F5F5;
+    }
+
+    a.box{
+        /* display: block; */
+        padding: 0;
+        background-color: #F5F5F5;
+        font-display:initial;
+        border-radius: 10px;
+        color: black;
+    }
+    
+    nav.logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+        top: 10px;
+    }
+
+    nav .links{
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 0;
+        width: auto;
+        flex-direction: column;
+        background-color: #F5F5F5;
+    }
+
+    label.icon-burger{
+        display:block;
+    }
+    
+}
+
