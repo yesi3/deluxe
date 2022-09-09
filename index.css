@@ -250,6 +250,11 @@ nav .icon-burger .line {
 
 }
 
+.swiper{
+	width: 1200px;
+	height: fit-content;
+}
+
 .haga h1{
 	font-weight: 800;
 	font-size: 35px;
@@ -356,6 +361,7 @@ a.btn-primary:hover, .active{
 	align-items: center;
 	flex-direction: column;
 	width: auto;
+	padding-bottom: 8%;
 }
 
 .com-head{
@@ -366,19 +372,30 @@ a.btn-primary:hover, .active{
 	top: 10px;
 	position: relative;
 	text-align: center;
+	margin-top: 35px;
 }
 
-.com-body{
+.com-body .com-body1 .com-body2{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
-	width: 100%;
+	/* flex-wrap: wrap; */
+	width: 100px;
+}
+
+.row{
+	position: relative;
+	top: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	width: auto;
 }
 
 .bop{
-	width: 500px;
-	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+	width: auto;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
 	background-color: #FFFFFF;
 	padding: 20px;
 	margin: 15px;
@@ -422,6 +439,162 @@ a.btn-primary:hover, .active{
 	line-height: 20px;
 	color: #1A1A1A;
 }
+
+/* enter email */
+.message{
+	position: relative;
+	top: 1400px;
+	background-color: #FFFFFF;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+}
+
+.content{
+	position: relative;
+	top: 100px;
+	display: flex;
+	background-color: #1A1A1A;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* width: auto; */
+	width: 1240px;
+	height: 332px;
+	border-radius: 10px;
+	bottom: 1000px;
+}
+
+.content h1{
+	font-weight: 800;
+	font-size: 35px;
+	line-height: 44px;
+	color: #FFFFFF;
+}
+
+.content h2{
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 25px;
+	color: #FFFFFF;
+	margin-top: 0;
+}
+
+label{
+	position: relative;
+	margin-top: 25px;
+}
+
+input[type="text"]{
+	border: none;
+	width: 600px;
+	height: 80px;
+	padding: 0 15px;
+	border-radius: 10px;
+	font-size: 16px;
+}
+
+.apply{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	background: #1A1A1A;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 10px;
+	padding: 15px 32px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 23px;
+}
+
+/* footer */
+footer{
+	position: relative;
+	top: 1600px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -mz-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 50px;
+	color: #FFFFFF;
+	background-color: #222222;
+}
+
+.footer > *{
+	flex: 1 100%;
+}
+
+.footer-left{
+	margin-right: 1.25em;
+	margin-bottom: 2em;
+}
+
+.footer-right h2{
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+footer ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+footer li{
+	line-height: 2em;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+.footer-right{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -mz-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.footer-right > *{
+	flex: 1 50%;
+	margin-right: 1.25em;
+}
+
+.box a{
+	color: #E5E5E5;
+
+}
+
+.footer-left p{
+	padding-right: 20%;
+	color: #E5E5E5;
+}
+
+.socials a{
+	background: #0A0909;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+.socials a i{
+	color: #E5E5E5;
+	padding: 10px 12px;
+	font-size: 20px;
+}
+
+
+/* responsiveness */
 
 @media screen and (max-width: 768px) {
 nav .logo {
@@ -510,6 +683,9 @@ a.box{
 	flex-direction: column-reverse;
 }
 
+.row{
+	flex-direction: column;
+}
 .content2{
 	text-align: center;
 	margin-inline: auto;
@@ -544,6 +720,10 @@ a.box{
 	font-size: 30px;
 }
 
+.com-body1 .com-body2{
+	display: none;
+}
+
 .content2 h2{
 	font-size: 25px;
 }
@@ -568,4 +748,18 @@ a.box{
 	float:left;	
 }
 
+}
+
+@media screen and (min-width: 600px){
+	.footer-right > *{
+		flex: 1;
+	}
+
+	.footer-left{
+		flex: 1 0px;
+	}
+
+	.footer-right{
+		flex: 2 0px;
+	}
 }
