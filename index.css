@@ -185,6 +185,21 @@ nav .icon-burger .line {
 
 }
 
+.haza {
+	position: relative;
+	top: 200px;
+	
+	text-align: center;
+	margin-inline: auto;
+	width: min(70%, 90.5rem);
+
+}
+
+.haza h1 {
+	font-weight: 800;
+
+}
+
 .hava h1{
 	font-weight: 800;
 	font-size: 35px;
@@ -210,6 +225,15 @@ nav .icon-burger .line {
 	align-items: center;
 	gap: 100px;
 	
+}
+
+.about1{
+	position: relative;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	gap: 100px;
+	margin-top: 90px;
 }
 
 .read{
@@ -459,7 +483,7 @@ a.btn-primary:hover, .active{
 	justify-content: center;
 	align-items: center;
 	/* width: auto; */
-	width: 1240px;
+	width: 80vw;
 	height: 332px;
 	border-radius: 10px;
 	bottom: 1000px;
@@ -487,9 +511,10 @@ label{
 
 input[type="text"]{
 	border: none;
-	width: 600px;
+	width: 50vw;
 	height: 80px;
-	padding: 0 15px;
+
+	padding: 0 10px;
 	border-radius: 10px;
 	font-size: 16px;
 }
@@ -703,6 +728,10 @@ a.box{
 	flex-direction: column-reverse;
 }
 
+.about1 {
+	flex-direction: column-reverse;
+}
+
 .row{
 	flex-direction: column;
 }
@@ -710,6 +739,7 @@ a.box{
 	text-align: center;
 	margin-inline: auto;
 }
+
 
 .content3{
 	display: inline-block;
@@ -766,6 +796,18 @@ a.box{
 
 .content5{
 	float:left;	
+}
+
+input[type="text"]{
+	
+	width: 90vw;
+	
+
+	padding: 0 10px;
+
+}
+.content {
+	width: 100vw;
 }
 
 }
