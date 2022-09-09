@@ -120,8 +120,6 @@ nav .icon-burger .line {
 /* background image */
 .ellipse{
 	position: absolute;
-	/* width: 907px; */
-	/* height: 847px; */
 	margin-right: 0;
 	margin-left: 60%;
 	margin-top: 0;
@@ -592,6 +590,28 @@ footer a{
 	padding: 10px 12px;
 	font-size: 20px;
 }
+
+/* contactus */
+.contact-form{
+	position: relative;
+	top: 200px;
+	margin-left: 10%;
+}
+
+.mail{
+	position: relative;
+	/* position: absolute; */
+	margin-right: 0;
+	margin-left: 55%;
+}
+
+.input-container input{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px #222222;
+}
+
 
 
 /* responsiveness */
